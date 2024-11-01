@@ -1,0 +1,64 @@
+#addStudents{
+    width: 100%;
+    height: 47.5vw;
+    padding: 2vw 2vw 1vw 0;
+}
+#addStudents #title{
+    width: 100%;
+    height: 20%;
+    padding: 1vw 1vw;
+}
+#addStudents #title h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2vw;
+    font-weight: 600;
+}
+#addStudents #title h4{
+    text-transform: uppercase;
+    font-size: 1.4vw;
+    text-align: center;
+    font-weight: 500;
+}
+
+#addStudents #container{
+    height: 80%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 49.5% 49.5%;
+    grid-template-rows: auto auto auto;
+    column-gap: 1%;
+    row-gap: 2%;
+}
+#addStudents .sem{
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw;
+    overflow: hidden;
+    background-color: #FFF;
+}
+#addStudents .sem h3{
+    font-size: 3vw;
+    color: #000;
+}
+#addStudents .sem h3::first-letter{
+    font-size: 4vw;
+}
+#addStudents .sem i{
+    color: #000;
+    font-size: 4vw;
+    border: 0.25vw solid black;
+    border-radius: 50%;
+    padding: 0 0.23vw;
+}
+#addStudents .sem a{
+    padding: 0 0 0 3vw;
+    display: flex;
+    align-items: center;
+    color: var(--color-info-dark);
+    height: 100%;
+    gap: 3vw;
+    position: relative;
+    transition: all 0.3s ease;
+    margin-bottom: 0.6vw;
+}   

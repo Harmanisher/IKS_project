@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Admin Login Page</title>
+    <link rel="stylesheet" href="theme.css">
+    <!-- <link rel="stylesheet" href="admin_login.css"> -->
+    <link rel="stylesheet" href="login.css">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <link href='https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css' rel='stylesheet'/>
+</head>
+<body>
+    <main>
+        <div id="navbar"></div>
+        <div id="login">
+            <div id="box">
+                <form action="admin_login.php" method="post" id="form" name="myform"
+            onsubmit="return validateform(); checkvalidity()">
+                    <h2>Admin Portal</h2>
+                    <div class="input_box">
+                        <input type="text" name="username" id="username" placeholder="Username" class="badlo" required>
+                        <i class="ri-user-fill"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" name="password" id="password" placeholder="Password" class="badlo" required>
+                        <i class="ri-lock-fill"></i>
+                    </div>
+                    <button type="submit" name="submit" class="end" id="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script>
+            $("#navbar").load("navbar.html");
+            document.body.classList.add("dark-mode-variables");
+    </script>
+</body>
+</html>

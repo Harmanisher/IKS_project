@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="faculty.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head> 
+<body>
+    <main>
+        <div id="back">
+            <a href="index.html">
+                <i class="ri-arrow-left-s-line"></i>
+                <h3>Home</h3>
+            </a>
+            <div id="theme">
+                <div id="sun">
+                    <i id="sun_line" class="ri-sun-line"></i>
+                    <i id="sun_fill" class="ri-sun-fill"></i>
+                </div>
+                <div id="moon">
+                    <i id="moon_line" class="ri-moon-line"></i>
+                    <i id="moon_fill" class="ri-moon-fill"></i>
+                </div>
+            </div>
+        </div>
+        <div id="faculty-members">
+            <h1>Our Exceptional Faculty</h1>
+            <div class="faculty">
+                <img src="Faculty-SanjayKoul.jpg" alt="">
+                <div id="info">
+                    <h2>Er. Sanjay Koul</h2>
+                    <h4>HOD, Computer Science</h4>
+                </div>
+            </div>
+            <div class="faculty">
+                <img src="Faculty-SunilBhatti.JPG" alt="">
+                <div id="info">
+                    <h2>Er. Sunil Bhatti</h2>
+                    <h4>Lecturer (A/A)</h4>
+                </div>
+            </div>
+            <div class="faculty">
+                <img src="Faculty-AsmatNisar.JPG" alt="">
+                <div id="info">
+                    <h2>Asmat Nisar</h2>
+                    <h4>Guest lecturer</h4>
+                </div>
+            </div>
+            <div class="faculty">
+                <img src="Faculty-SoniaSethi.jpg" alt="">
+                <div id="info">
+                    <h2>Sonia Sethi</h2>
+                    <h4>Guest lecturer</h4>
+                </div>
+            </div>
+            <div class="faculty">
+                <img src="Faculty-HeenaGupta.JPG" alt="">
+                <div id="info">
+                    <h2>Heena Gupta</h2>
+                    <h4>Demonstrator</h4>
+                </div>
+            <!-- </div>
+            <div class="faculty">
+                <img src="profile-icon.jpg" alt="">
+                <div id="info">
+                    <h2>Name</h2>
+                    <h4>Desigation</h4>
+                </div>
+            </div>
+            <div class="faculty">
+                <img src="profile-icon.jpg" alt="">
+                <div id="info">
+                    <h2>Name</h2>
+                    <h4>Desigation</h4>
+                </div>
+            </div>
+            <div class="faculty">
+                <img src="profile-icon.jpg" alt="">
+                <div id="info">
+                    <h2>Name</h2>
+                    <h4>Desigation</h4>
+                </div> -->
+            </div>
+        </div>
+    </main>
+    <script>
+        let theme = document.querySelector('#theme');
+        let sun = document.querySelector('#sun');
+        let moon = document.querySelector('#moon');
+
+        theme.onclick = function(){
+        document.body.classList.toggle("dark-mode-variables");
+
+        if(sun.style.display !== 'none'){
+            sun.style.display = 'none';
+            moon.style.display = 'block';
+        }
+        else{
+            sun.style.display = 'block';
+            moon.style.display = 'none';
+        }
+    }
+    </script>
+</body>
+</html>

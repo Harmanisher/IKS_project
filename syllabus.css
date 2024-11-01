@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-color);
+}
+main{
+    width: 100%;
+    height: 47.5vw;
+    color: var(--text-color);
+    overflow: hidden;
+}
+#back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+#back a{
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    height: 2vw;
+    padding: 3vw 2vw 0 2vw;
+    gap: 0.6vw;
+    position: relative;
+    transition: all 0.3s ease;
+    margin-bottom: 0.6vw;
+}
+#back a h3{
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+#back a i{
+    font-size: 2vw;
+    transition: all 0.3s ease;
+}
+#back a:hover h3{
+    color: var(--tertiary-color);
+}
+#back a:hover i{
+    color: var(--tertiary-color);
+    margin-left: -0.6vw;
+}
+#theme{
+    padding: 2vw 4vw 0 2vw;
+    display: flex;
+}
+i{
+    font-size: 1.6vw;
+    color: var(--text-color);
+}
+#sun{
+    display: inline-block;
+}
+#sun_fill{
+    display: none;
+}
+#sun:hover #sun_line{
+    display: none;
+}
+#sun:hover #sun_fill{
+    display: inline-block;
+}
+
+#moon{
+    display: none;
+}
+#moon_fill{
+    display: none;
+}
+#moon:hover #moon_line{
+    display: none;
+}
+#moon:hover #moon_fill{
+    display: inline-block;
+}
+
+#main{
+    width: 100%;
+    height: 90.6%;
+    padding: 2vw 2vw;
+}
+#main #container{
+    padding: 2vw;
+    /* background-color: yellow; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5vw;
+}
+#main #container .sub{
+    width: 100%;
+    padding: 3vw 2vw;
+    background-color: var(--card-background-color);
+    border-radius: 1vw;
+}
+#main h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5vw;
+
+}
+#main #container h2{
+    font-size: 2.5vw;
+}
+#main #container #sem{
+    transition: all ease .2s;
+}
+#main #container #sem:hover{
+    margin-left: .6vw;
+}
+#main #container i{
+    font-size: 1.5vw;
+}
+#main #container a{
+    font-size: 1.5vw;
+    line-height: 4vw;
+    color: var(--text-color);
+}

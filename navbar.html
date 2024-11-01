@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>HomePage</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+    <div id="nav">
+        <nav>
+            <div id="logo">
+                <img src="department_logo.png" alt="">
+                <h4>Government Polytechnic Jammu</h2>
+                <h4>Departemnt of CS & IT</h2>
+            </div>
+            <div></div>
+            <a class="nav_a" href="index.html">Home</a>
+            <a class="nav_a" href="faculty.html">Faculty</a>
+            <button class="nav_a" href="#"  onclick="toggleMenu()">More<i class="ri-arrow-drop-down-line"></i></button>
+            <a class="nav_a" href="https://r.search.yahoo.com/_ylt=AwrjZs8IWn5mTYIBrWVXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1720766217/RO=10/RU=http%3a%2f%2fwww.govtpolytechnicjammu.edu.in%2f/RK=2/RS=WC7h_Mo1F.dWHtHzXtng3uRIovI-">About</a>
+            
+            
+            <div id="sub_menu_wrap">
+                <div id="sub_menu">
+                    <div class="sub_elem">
+                        <a class="sub_a" href="viewSessionals.html">Sessionals</a>
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                    <hr>
+                    <div class="sub_elem">
+                        <a class="sub_a" href="syllabus.html">Syllabus</a>
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                </div>
+            </div>
+            <a href="admin_login.html">
+                <div id="admin">
+                    <button>Admin</button>
+                </div>
+            </a>
+            <div id="theme">
+                <div id="sun">
+                    <i id="sun_line" class="ri-sun-line"></i>
+                    <i id="sun_fill" class="ri-sun-fill"></i>
+                </div>
+                <div id="moon">
+                    <i id="moon_line" class="ri-moon-line"></i>
+                    <i id="moon_fill" class="ri-moon-fill"></i>
+                </div>
+            </div>
+        </nav>
+    </div>
+<script>
+
+    let nav = document.querySelector("#nav");
+    let navItems = document.querySelector("nav");
+
+    window.addEventListener("scroll", function(){
+        nav.classList.toggle("scroll", window.scrollY > 0);
+        nav.classList.add('navAni');
+        navItems.classList.add('navItemsAni');
+        if(window.scrollY === 0){
+            setTimeout(function() {
+            nav.classList.remove('navAni');
+            navItems.classList.remove('navItemsAni');
+            },0);
+        } 
+    })
+
+    let subMenu = document.querySelector("#sub_menu_wrap");
+    function toggleMenu(){
+        subMenu.classList.toggle("openMenu");
+    }
+
+    let theme = document.querySelector('#theme');
+    let sun = document.querySelector('#sun');
+    let moon = document.querySelector('#moon');
+
+    theme.onclick = function(){
+        document.body.classList.toggle("dark-mode-variables");
+
+    if(sun.style.display !== 'none'){
+        sun.style.display = 'none';
+        moon.style.display = 'block';
+    }
+    else{
+        sun.style.display = 'block';
+        moon.style.display = 'none';
+}
+    }
+</script>
+</body>
+</html>

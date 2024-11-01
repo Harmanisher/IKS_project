@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="viewSessionals.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head> 
+<body>
+    <main>
+
+        <div id="back">
+            <a href="index.html">
+                <i class="ri-arrow-left-s-line"></i>
+                <h3>Home</h3>
+            </a>
+        </div>
+        
+        <div id="viewSessionals">
+
+
+    <form action="viewMarks.php" id="frm" method="post" class="box_shadow">
+        <h2>View Your Sessionals Marks</h2>
+        <div class="input">
+        <label for="">Rollno : </label><input type="number" name="rollno"><br><br>
+        </div>
+        <div class="input">
+            <label for="">Name:</label> <input type="text" name="name"><br><br>
+        </div>
+        <div class="input">
+            <label for="">Branch: </label>
+        <select name="branch">
+            <option value="Computer Engineering">Computer Engineering</option>
+            <option value="Information Technology">Information Technology</option>
+        </select><br><br>
+    </div>
+    <div class="input">
+        <label for="">Semester: </label>
+        <select class="custom-select" name="semester">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select><br><br>
+    </div>
+    <div id="button">
+        <button id="submit" name="submit">check Your Marks</button>
+    </div>
+    </form>
+        </div>
+    </main>
+    
+    <script>
+        $("#navbar").load("navbar.html");
+        let nav = document.querySelector("#nav");
+        let navItems = document.querySelector("nav");
+
+        window.addEventListener("scroll", function(){
+            nav.classList.remove('navAni');
+            navItems.classList.remove('navItemsAni');
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: var(--background-color);
+}
+main{
+    width: 100%;
+    height: 100%;
+}
+#back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+#back a{
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    height: 2vw;
+    padding: 3vw 2vw 0 2vw;
+    gap: 0.6vw;
+    position: relative;
+    transition: all 0.3s ease;
+    margin-bottom: 0.6vw;
+}
+#back a h3{
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+#back a i{
+    font-size: 2vw;
+    transition: all 0.3s ease;
+}
+#back a:hover h3{
+    color: var(--tertiary-color);
+}
+#back a:hover i{
+    color: var(--tertiary-color);
+    margin-left: -0.6vw;
+}
+#theme{
+    margin: 2vw 4vw 0 2vw;
+    display: flex;
+}
+i{
+    font-size: 1.6vw;
+    color: var(--text-color);
+}
+#sun{
+    display: inline-block;
+}
+#sun_fill{
+    display: none;
+}
+#sun:hover #sun_line{
+    display: none;
+}
+#sun:hover #sun_fill{
+    display: inline-block;
+}
+
+#moon{
+    display: none;
+}
+#moon_fill{
+    display: none;
+}
+#moon:hover #moon_line{
+    display: none;
+}
+#moon:hover #moon_fill{
+    display: inline-block;
+}
+
+#faculty-members{
+    width: 100%;
+    height: 100%;
+    padding: 2% 0 2% 2%;
+}
+#faculty-members h1{
+    font-size: 2.4vw;
+    text-align: center;
+    padding: 1vw 2vw;
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-weight: 600;
+    position: relative;
+}
+
+.faculty{
+    background-color: var(--card-background-color);
+    width: 23%;
+    margin-right: 1.5%;
+    margin-bottom: 1.5%;
+    height: 70%;
+    position: relative;
+    display: inline-block;
+    border-radius: 1vw;
+    overflow: hidden;
+    color: white;
+}
+.faculty img{
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 100%;
+    transition: all ease 0.1s;
+}
+.faculty #info{
+    position: absolute;
+    width: 100%;
+    top: 75%;
+    left: 0;
+}
+.faculty h2{
+    text-align: center;
+    width: 80%;
+    background-color: #4B49AC;
+    margin-bottom: 2%;
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    font-size: 1.5vw;
+    font-weight: 600;
+    padding: .2vw;
+}
+.faculty h4{
+    text-align: center;
+    width: 70%;
+    background-color: #FF1616;
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    font-size: .8vw;
+    line-height: 1.5vw;
+    font-weight: 500;
+    font-style: italic;
+    padding: .1vw;
+}
+.faculty:hover img{
+    scale: 1.01;
+}
+.faculty:hover h2{
+    font-size: 1.55vw;
+}

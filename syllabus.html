@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus</title>
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="syllabus.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</head>
+<body>
+  <main>
+
+    <div id="back">
+        <a href="index.html">
+            <i class="ri-arrow-left-s-line"></i>
+            <h3>Home</h3>
+        </a>
+        <div id="theme">
+            <div id="sun">
+                <i id="sun_line" class="ri-sun-line"></i>
+                <i id="sun_fill" class="ri-sun-fill"></i>
+            </div>
+            <div id="moon">
+                <i id="moon_line" class="ri-moon-line"></i>
+                <i id="moon_fill" class="ri-moon-fill"></i>
+            </div>
+        </div>
+    </div>
+    
+    <div id="main">
+      <h1>Syllabus</h1>
+      <div id="container">
+        <div class="sub">
+          <h2>Computer Science</h2>
+          <div id="sem">
+            <i class="ri-arrow-right-s-line"></i>
+            <a href="./syllabus/comp-sem1.pdf" target="_blank">1st Sem</a><br>
+          </div>
+          <div id="sem">
+            <i class="ri-arrow-right-s-line"></i>
+            <a href="./syllabus/comp-sem2.pdf" target="_blank">2nd Sem</a><br>
+          </div>
+          <div id="sem">
+            <i class="ri-arrow-right-s-line"></i>
+            <a href="./syllabus/comp-sem3.pdf" target="_blank">3rd Sem</a><br>
+          </div>
+          <div id="sem">
+            <i class="ri-arrow-right-s-line"></i>
+            <a href="./syllabus/comp-sem4.pdf" target="_blank">4th Sem</a><br>
+          </div>
+          <div id="sem">
+            <i class="ri-arrow-right-s-line"></i>
+            <a href="./syllabus/comp-sem5.pdf" target="_blank">5th Sem</a><br>
+          </div>
+          <div id="sem">
+            <i class="ri-arrow-right-s-line"></i>
+            <a href="./syllabus/comp-sem6.pdf" target="_blank">6th Sem</a><br>
+          </div>
+        </div>
+        <div class="sub">
+          <h2>Information technology</h2>
+          <div id="sem">
+            <i class="ri-arrow-right-s-line"></i>
+            <a href="./syllabus/it-sem1.pdf" target="_blank">1st Sem</a><br>
+          </div>
+          <div id="sem">
+            <i class="ri-arrow-right-s-line"></i>
+            <a href="./syllabus/it-sem2.pdf" target="_blank">2nd Sem</a><br>
+          </div>
+          <div id="sem">
+            <i class="ri-arrow-right-s-line"></i>
+            <a href="./syllabus/it-sem3.pdf" target="_blank">3rd Sem</a><br>
+          </div>
+          <div id="sem">
+            <i class="ri-arrow-right-s-line"></i>
+            <a href="./syllabus/it-sem4.pdf" target="_blank">4th Sem</a><br>
+          </div>
+          <div id="sem">
+            <i class="ri-arrow-right-s-line"></i>
+            <a href="./syllabus/it-sem5.pdf" target="_blank">5th Sem</a><br>
+          </div>
+          <div id="sem">
+            <i class="ri-arrow-right-s-line"></i>
+            <a href="./syllabus/it-sem6.pdf" target="_blank">6th Sem</a><br>
+          </div>
+        </div>
+      </div>
+    </div>
+</main>
+
+<script>
+    let theme = document.querySelector('#theme');
+    let sun = document.querySelector('#sun');
+    let moon = document.querySelector('#moon');
+
+    theme.onclick = function(){
+    document.body.classList.toggle("dark-mode-variables");
+
+    if(sun.style.display !== 'none'){
+        sun.style.display = 'none';
+        moon.style.display = 'block';
+    }
+    else{
+        sun.style.display = 'block';
+        moon.style.display = 'none';
+    }
+}
+</script>
+</body>
+</html>

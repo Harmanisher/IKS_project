@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    }
+    html,body{
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-color);
+    }
+    main{
+        height: 100%;
+        width: 100%;
+        background: url(./images/admin-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #navbar{
+        height: 9.4%;
+    }
+    #navbar *{
+        color: var(--text-color) ;
+        border-color: var(--text-color) ;
+    }
+    #navbar #theme{
+        display: none
+    }
+    #navbar #nav{
+        background-color: transparent;
+    }
+    #navbar a button:hover:hover{
+        background-color: var(--primary-color) ;
+        border-color: var(--primary-color) ;
+        color: #FFF;
+    }
+    #login{
+        height: 90.6%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #box{
+        width: 35vw;
+        height: 25vw;
+        border-radius: 1vw;
+        backdrop-filter: blur(.2vw);
+        position: relative;
+        overflow: hidden;
+        border: var(--border);
+    }
+    form{
+        width: 35vw;
+        padding: 2vw 3vw;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        color: var(--text-color);
+    }
+    #box h2{
+        font-size: 2.1vw;
+        text-align: center;
+        text-shadow: 0 0 .1vw #000;
+    }
+    #box .input_box{
+        height: 3.5vw;
+        width: 100%;
+        margin: 1.5vw 0;
+        position: relative;
+        border: var(--border);
+        border-radius: .8vw;
+    }
+    #box .input_box i{
+        position: absolute;
+        left: 92%;
+        top: 25%;
+        font-size: 1.4vw;
+    }
+    .input_box input{
+        height: 100%;
+        width: 100%;
+        border: none;
+        outline: none;
+        position: absolute;
+        font-size: 1vw;
+        background: transparent;
+        padding: 1vw 2vw;
+        color: var(--text-color);
+    }
+    .input_box input::placeholder{
+        color: #eee;
+    }
+    #box button{
+        height: 3.5vw;
+        width: 83%;
+        border-radius: .8vw;
+        border: none;
+        outline: none;
+        background: transparent;
+        position: absolute;
+        border: var(--border);
+        color: var(--text-color) ;
+        font-size: 1.2vw;
+        font-weight: 700;
+    }
+    #box button:hover{
+        background-color: var(--primary-color);
+        color: #fff;
+        border-color: var(--primary-color);
+    }

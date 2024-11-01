@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="admin_dashboard.css">
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+    <div id="bar">
+        <div class="color" style="background-color: #4B49AC;"></div>
+        <div class="color" style="background-color: #7CA0FA;"></div>
+        <div class="color" style="background-color: #7878EA;"></div>
+        <div class="color" style="background-color: #F37A7E;"></div>
+        <div class="color" style="background-color: #F5F7FF;"></div>
+        <div class="color" style="background-color: #000000;"></div>
+        <div class="color" style="background-color: #98BCFF;"></div>
+        <div class="color" style="background-color: #FFFFFF;"></div>
+        <div class="color" style="background-color: #555555;"></div>
+        <div class="color" style="background-color: #777777;"></div>
+    </div>
+    <main>
+        <!-- Sidebar Section -->
+        <aside>
+            <div id="aside">
+                <div class="toggle">
+                    <div id="goToHome">
+                        <a href="index.html">
+                            <i class="ri-arrow-left-s-line"></i>
+                            <h3>Home</h3>
+                        </a>
+                    </div>
+                    <div class="close" id="close-btn">
+                        <!-- hamburger here booom -->
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <a href="admin_dashboard.html" class="active">
+                        <i class="ri-dashboard-line"></i>
+                        <h3>Dashboard</h3>
+                    </a>
+                    <a href="StudentsCS.html">
+                        <i class="ri-id-card-line"></i>
+                        <h3>Students (CS)</h3>
+                    </a>
+                    <a href="admin_addstudentsCS.html">
+                        <i class="ri-add-box-line"></i>
+                        <h3>Add Students (CS)</h3>
+                    </a>
+                    <a href="StudentsIT.html">
+                        <i class="ri-id-card-line"></i>
+                        <h3>Students (IT)</h3>
+                    </a>
+                    <a href="admin_addstudentsIT.html">
+                        <i class="ri-add-box-line"></i>
+                        <h3>Add Students (IT)</h3>
+                    </a>
+                    <a href="Sessionals.html">
+                        <i class="ri-bar-chart-box-line"></i>
+                        <h3>Sessionals</h3>
+                    </a>
+                    <a href="admin_login.html">
+                        <i class="ri-logout-box-r-line"></i>
+                        <h3>Logout</h3>
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <!-- Dashboard Section -->
+        <div id="dashboard">
+            <div id="welcome">
+                <h1>Welcome Back Admin</h1>
+                <div id="clock"></div>
+            </div>
+            <div id="dashboard_left">
+                <div id="first_row">
+                    <div id="total">
+                        <div class="record box_shadow">
+                            <h3>Total Faculty Members</h3>
+                            <h2>12</h2>
+                            <i class="ri-user-3-fill"></i>
+
+                        </div>
+                    </div>
+                    <div class="graph box_shadow">
+                        <h4>Average Performance In Tests</h4>
+                        <hr><img src="./performance_graph.png" alt="">
+                    </div>
+                </div>
+                <div id="second_row">
+                    <div class="graph box_shadow">
+                        <h4>Average Attendance</h4>
+                        <hr><img src="./attendence_graph.png" alt="">
+                    </div>
+                    <div class="graph box_shadow">
+                        <h4>Faculty WorkLoad</h4>
+                        <hr><img src="./Workload.graph.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div id="dashboard_right">
+                <div class="upcoming_events box_shadow">
+                    <h2>Upcoming Events</h2>
+                    <hr>
+                    <ul>
+                        <li before="15" after="AUG">
+                            <h4>Event1</h4>
+                            <p>Event type</p>
+                        </li>
+                        <li before="15" after="AUG">
+                            <h4>Event2</h4>
+                            <p>Event type</p>
+                        </li>
+                        <li before="15" after="AUG">
+                            <h4>Event3</h4>
+                            <p>Event type</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="todo_container box_shadow">
+                    <h1>ToDo List</h1>
+                    <div class="inputField">
+                        <input type="text" placeholder="Add your new todo">
+                        <button><i class="ri-add-fill"></i></button>
+                    </div>
+                    <ul class="todoList">
+
+                    </ul>
+                    <div class="footer">
+                        <span>You have <span class="pendingTasks"></span> pending tasks</span>
+                        <button>Clear All</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="admin_dashboard.js"></script>
+</body>
+
+</html>
+
+
+<!-- 
+    total no of students
+    faculty members
+    upcoming event
+    graphs(probably)
+ -->

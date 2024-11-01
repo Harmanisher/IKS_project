@@ -1,0 +1,76 @@
+#sessionals{
+    width: 100%;
+    height: 47.5vw;
+    padding: 2vw 2vw 1vw 0;
+}
+#sessionals #title{
+    width: 100%;
+    height: 10%;
+    padding: 1vw 1vw;
+}
+#sessionals #title h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2vw;
+    font-weight: 600;
+}
+#sessionals #container{
+    height: 90%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 49.5% 49.5%;
+    row-gap: 2%;
+}
+#sessionals #container .cont{
+    height: 100%;
+    width: 100%;
+    padding: 1.5vw 2vw;
+    background-color: #FFF;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 20% 35% 35%;
+    column-gap: 5%;
+    row-gap: 3%;
+    border-radius: 2vw;
+}
+#sessionals #container .cont h4{
+    grid-column: 1/4;
+    text-transform: uppercase;
+    font-size: 1.6vw;
+    text-decoration: underline;
+    padding: 0 2vw;
+    align-self: center;
+    font-weight: 700;
+}
+#sessionals .sem{
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw;
+    overflow: hidden;
+    background-color: #FFF;
+}
+#sessionals .sem h3{
+    font-size: 2vw;
+    color: #000;
+}
+#sessionals .sem h3::first-letter{
+    font-size: 2.5vw;
+}
+#sessionals .sem i{
+    color: #000;
+    font-size: 3vw;
+    border: 0.2vw solid black;
+    border-radius: 50%;
+    padding: 0 0.23vw;
+}
+#sessionals .sem a{
+    padding: 0 0 0 3vw;
+    display: flex;
+    align-items: center;
+    color: var(--color-info-dark);
+    height: 100%;
+    gap: 3vw;
+    position: relative;
+    transition: all 0.3s ease;
+    margin-bottom: 0.6vw;
+}   

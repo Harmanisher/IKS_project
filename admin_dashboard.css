@@ -1,0 +1,293 @@
+#dashboard{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 13% auto;
+    grid-template-columns: 65% 35%;
+}
+#dashboard #welcome{
+    grid-column: 1/3;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vw 2.5vw;
+}
+#dashboard #welcome h1{
+    font-weight: 500;
+    font-size: 1.4vw;
+    color: #363949;
+}
+#dashboard #clock{
+    border: 0.2vw solid;
+    padding: 0.6vw;
+    border-radius: 0.6vw;
+    font-size: 1vw;
+}
+/* LEFT DASHBOARD SECTION */
+#dashboard_left{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#dashboard_left #first_row{
+    height: 40%;
+    width: 100%;
+    display: flex;
+}
+#dashboard_left #total{
+    height: 100%;
+    width: 100%;
+    padding: 4vh 1vw 2vh 0;     
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+#dashboard_left #total .record{
+    /* height: 100%; */
+    width: 100%;
+    border-radius: 1vw;
+    padding: 2vw;
+    position: relative;
+    background-color: #96B2FB;
+}
+#dashboard_left #total .record h3{
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+#dashboard_left #total .record h2{
+    font-size: 2vw;
+    margin-top: 2vh;
+}
+#dashboard_left #total .record i{
+    font-size: 3vw;
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+}
+#dashboard_left #second_row{
+    height: 40%;
+    width: 100%;
+    display: flex;
+}
+.graph{
+    width: 100%;
+    background-color: #fff;
+    margin: 4vh 1vw 2vh 0;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+.graph h4{
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: 500;
+    padding: 0.4vw;
+}
+.graph hr{
+    border: #363949 solid 0.1vw;
+    margin: 1vh 1vw;
+}
+.graph img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* RIGHT DASHBOARD */
+#dashboard_right{
+    height: 100%;
+    width: 100%;
+    padding: 4vh 2vw 2vh 0;
+    color: #363949;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+/* EVENT SECTION */
+.upcoming_events{
+    background-color: #fff;
+    width: 100%;
+    padding: 3vh 0;
+    border-radius: 1vw;
+}
+.upcoming_events h2{
+    padding-left: 2vw;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+.upcoming_events hr{
+    border: #363949 solid 0.1vw;
+    margin: 1vh 1vw;
+}
+.upcoming_events ul{
+    padding: 3vh 2vw ;
+    height: fit-content;
+    list-style-type: none;
+}
+.upcoming_events ul li{
+    height: 3vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+    position: relative;
+    padding-left: 4vw;
+}
+.upcoming_events ul li::before{
+    content: attr(before);
+    height: 3vw;
+    padding-top: 1vh;
+    display: block;
+    width: 3vw;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    font-size: 1vw;
+}
+.upcoming_events ul li::after {
+    content: attr(after);
+    display: block;
+    position: absolute;
+    bottom: -2vw;
+    width: 3vw;
+    height: 100%;
+    font-size: 0.6vw;
+    font-weight: 500;
+    text-align: center;
+    left: 0;
+    color: #fff;
+}
+.upcoming_events ul li:nth-child(1)::before{background-color: #7CA0FA;}
+.upcoming_events ul li:nth-child(2)::before{background-color: #F37A7E;}
+.upcoming_events ul li:nth-child(3)::before{background-color: #4B49AC;}
+
+.upcoming_events ul li h4{
+    height: 100%;
+    font-size: 1.2vw;
+    font-weight: 500 ;
+}
+.upcoming_events ul li p{
+    font-size: 0.8vw;
+    font-weight: 300;
+}
+/* TODO SECTION */
+.todo_container{
+    background: #fff;
+    width: 100%;
+    padding: 3vh 2vw;
+    border-radius: 1vw;
+}
+.todo_container h1{
+    font-size: 2.4vw;
+    font-weight: 600;
+}
+.todo_container .inputField{
+    margin: 2vh 0;
+    width: 100%;
+    display: flex;
+    height: 3vw;
+}
+.inputField input{
+    width: 85%;
+    height: 100%;
+    outline: none;
+    border-radius: 0.3vw;
+    border: 1px solid #ccc;
+    font-size: 1vw;
+    padding-left: 1.5vw;
+    transition: all 0.3s ease;
+}
+.inputField input:focus{
+    border-color: #4B49AC;
+}
+.inputField button{
+    width: 15%;
+    height: 100%;
+    border: none;
+    color: #fff;
+    margin-left: .5vw;
+    font-size: 1.5vw;
+    outline: none;
+    background: #4B49AC;
+    cursor: pointer;
+    border-radius: .3vw;
+    opacity: 0.6;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.inputField button:hover,
+.footer button:hover{
+background: #7CA0FA;
+}
+.inputField button.active{
+opacity: 1;
+pointer-events: auto;
+}
+.todo_container .todoList{
+max-height: 250px;
+overflow-y: auto;
+}
+.todoList li{
+position: relative;
+list-style: none;
+height: 6vh;
+line-height: 6vh;
+margin-bottom: 0.8vh;
+background: #eee;
+border-radius: 0.3vw;
+padding: 0 1.5vw;
+cursor: default;
+overflow: hidden;
+font-size: 0.8vw;
+font-weight: 400;
+}
+.todoList li .icon{
+position: absolute;
+right: -3.375vw;
+background: #F37A7E;
+width: 3.375vw;
+text-align: center;
+color: #fff;
+border-radius: 0 0.3vw 0.3vw 0;
+cursor: pointer;
+transition: all 0.2s ease;
+}
+.todoList li:hover .icon{
+right: 0;
+}
+.todo_container .footer{
+display: flex;
+width: 100%;
+margin-top: 4vh;
+align-items: center;
+justify-content: space-between;
+font-size: 0.8vw;
+color: #4B49AC;
+}
+.todo_container .footer button{
+padding: 1.6vh 1.2vw;
+border-radius: 0.2vw;
+border: none;
+outline: none;
+color: #fff;
+font-weight: 400;
+font-size: 1vw;
+margin-left: 5px;
+background: #8E49E8;
+cursor: pointer;
+user-select: none;
+opacity: 0.6;
+pointer-events: none;
+transition: all 0.3s ease;
+}
+.footer button.active{
+    opacity: 1;
+    pointer-events: auto;
+}

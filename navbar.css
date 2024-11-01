@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    overflow-x: hidden;
+}
+#nav{
+    width: 100%;
+    height: 4.5vw;
+    position: fixed;
+    z-index: 1000;
+}
+nav{
+    margin-left: 2vw;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 13% 10% 10% 10% 10% 13% 9%;
+    grid-template-rows: 100%;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+}
+.navAni{
+    position: absolute;
+    top: -100%;
+    animation: navAnimate .8s forwards;
+}
+.navItemsAni{
+    position: absolute;
+    top: -100%;
+    animation: navAnimate 1s forwards 0.4s;
+}
+@keyframes navAnimate {
+    to{
+        top: 0;
+    }
+}
+nav #logo{
+    align-self: self-end;
+    height: 90%;
+    width: 100%;
+    padding-left: 3vw;
+    display: grid;
+    border-top-left-radius: 1.2vw; 
+    border-top-right-radius: 1.2vw;
+    border-bottom-left-radius: 1.12vw;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 20% 80%;
+}
+nav #logo img{
+    align-self: center;
+    justify-self: center;
+    height: 90%;
+    width: 80%;
+    grid-row: 1/3;
+}
+nav #logo h4{
+    color: var(--text-color);
+    font-size: 1vw;
+    font-weight: 600;
+}
+nav #logo h4:nth-child(2) {
+    align-self: self-end;
+    font-weight: 500;
+}
+nav .nav_a{
+    padding: 1vw;
+    font-size: 1.2vw;
+    font-weight: 400;
+    justify-self: center;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+    position: relative;
+}
+.ri-arrow-drop-down-line{
+    color: var(--text-color);
+    font-size: 1.5vw;
+}
+nav .nav_a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.1vw;
+    left: 0%;
+    top: 76%;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    transition: ease all 0.5s;
+    scale: 0;
+}
+nav .nav_a:hover::after{
+    scale: 1;
+} 
+nav a:nth-last-child(3):hover::after{
+    display: none;
+}
+nav a button{
+    top: 18%;
+    right: 12%;
+    padding: 0.5vw 1.6vw;
+    border: var(--border);
+    border-radius: 1vw;
+    position: absolute;
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 1.1vw;
+    font-weight: 400;
+    text-decoration: none;
+}
+nav a button:hover{
+    background-color: var(--primary-color);
+    color: var(--text-color-white);
+    border-color: var(--primary-color);
+}
+nav #theme{
+    display: flex;
+    vertical-align: middle;
+}
+nav i{
+    font-size: 1.6vw;
+    color: var(--text-color);
+}
+nav #sun{
+    display: inline-block;
+}
+nav #sun_fill{
+    display: none;
+}
+nav #sun:hover #sun_line{
+    display: none;
+}
+nav #sun:hover #sun_fill{
+    display: inline-block;
+}
+
+nav #moon{
+    display: none;
+}
+nav #moon_fill{
+    display: none;
+}
+nav #moon:hover #moon_line{
+    display: none;
+}
+nav #moon:hover #moon_fill{
+    display: inline-block;
+}
+#nav.scroll{
+    height: 4vw;
+    background-color: var(--card-background-color) !important;
+}
+
+#nav.scroll nav .nav_a, #nav.scroll nav i, #nav.scroll nav h4{
+    text-shadow: none;
+    color: var(--text-color) !important;
+}
+#nav.scroll nav a button{
+    color: var(--text-color);
+    border-color: var(--text-color);
+}
+#nav.scroll nav a button:hover{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-color-white);
+}
+
+
+#sub_menu_wrap{
+    position: absolute;
+    top: 100%;
+    left: 57%;
+    width: 12vw;
+    height: 0;
+    overflow: hidden;
+    transition: height .5s;
+}
+#sub_menu_wrap.openMenu{
+    height: 400%;
+}
+#sub_menu{
+    background-color: var(--card-background-color);
+    padding: 1vw 1.2vw 0.6vw 1.2vw;
+}
+#sub_menu .sub_elem .sub_a{
+    text-transform: uppercase;
+    font-size: 1.1vw;
+    font-weight: 400;
+    width: 100%;
+    padding: 0.2vw;
+    color: var(--text-color);
+    text-shadow: none;
+    transition: all 0.1s ease;
+}
+#sub_menu .sub_elem{
+    display: flex;
+    align-items: center;
+}
+#sub_menu hr{
+    margin: 0.6vw 0;
+}
+#sub_menu i{
+    color: var(--text-color);
+    font-size: 1.4vw;
+}
+#sub_menu .sub_elem:hover i{
+    transform: translateX(0.2vw);
+}
+#sub_menu .sub_elem:hover .sub_a{
+    font-weight: 500;
+}

@@ -1,0 +1,31 @@
+.tbl td {
+    padding: 10px;
+    width: 500px;
+    /* background-color: #FFF; */
+
+}
+
+.tbl {
+
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.tbl th {
+    border: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 5px;
+
+
+}
+
+.hoverrow {
+    box-shadow: 0 0 1vw #6a6a6a25;
+
+}
+
+.hoverrow:hover {
+    background-color: #98BCFF;
+}

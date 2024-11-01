@@ -1,0 +1,201 @@
+
+#addStudents{
+    width: 100%;
+    height: 100%;
+    padding: 4vh 2vw 2vh 0;
+    /* background-color: yellowgreen; */
+    display: flex;
+    gap: 2vw;
+}
+#addStudents .details{
+    height: 100%;
+    width: 60%;
+    border-radius: 1vw;
+    display: grid;
+    grid-template-rows: 75% 25%;
+    grid-template-columns: 100%;
+    overflow: hidden;
+}
+#addStudents .details form{
+    padding: 4vh 0;
+    box-shadow: 0 1vw 3vw #77777725;
+    background-color: #FFF;
+    /* background-color: yellow; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3vh;
+}
+#addStudents .details form h2{
+    padding: 3vh 2vw 3vh 2vw;
+    /* background-color: turquoise; */
+    font-size: 1.6vw;
+}
+#addStudents .details form .input{
+    width: 90%;
+    height: 100%;
+    margin-left: 3vh;
+    overflow: hidden;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+}
+#addStudents .details form label{
+    width: 15%;
+    height: 100%;
+    /* background-color: yellow; */
+    font-size: 1vw;
+    padding: 2vh 1vw;
+}
+#addStudents .details form .input input{
+    background-color: #f0f0f0;
+    border-radius: 1vw;
+    width: 85%;
+    font-size: 1.1vw;
+    font-weight: 300;
+    height: 100%;
+    padding: 3vh 2vw;
+    appearance: none;
+}
+
+select {
+    background-color: white;
+    border: 0.1vw solid #7878EA;
+    font-size: 1.1vw;
+    padding: 1vh 3.5vw 1vh 1vw;
+    appearance: none;
+    background-image:
+      linear-gradient(45deg, #7878EA 50%, transparent 50%),
+      linear-gradient(135deg, transparent 50%, #7878EA 50%),
+      linear-gradient(to right, #ccc, #ccc);
+    background-position:
+      calc(100% - 0.7vw) 1.9vh,
+      calc(100% - 1.2vw) 1.9vh,
+      calc(100% - 2.5vw) 1vh;
+    background-size:
+      .5vw .5vw,
+      .5vw .5vw,
+      .1vw 1.5vw;
+    background-repeat: no-repeat;
+    outline: 0;
+}
+
+#addStudents .details form #button{
+    width: 30%;
+    height: 100%;
+    margin: 3% 35%;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    background-color: #7CA0FA;
+}
+#addStudents .details form #submit{
+    padding: 1vh 2vw;
+    width: 100%;
+    height: 100%;
+    font-size: 1.2vw;
+    font-weight: 700;
+    letter-spacing: 0.05vw;
+    /* justify-self: center; */
+    color: #FFF;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    transition: all linear 0s;
+    z-index: 1;
+    cursor: pointer;
+}
+#addStudents .details form #button::after{
+    content: '';
+    background-color: #7878E9;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -10%;
+    transition: all linear 0.4s;
+    z-index: -1;
+    transform: skewX(-45deg);
+}
+#addStudents .details form #button:hover::after{
+    width: 120%;
+}
+#addStudents .details form #button:hover{
+    color: #000;
+    transition-delay: 0.2s;
+}
+#addStudents .details #image{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+#addStudents img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#addStudents .info{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+#addStudents .info .noOfStudents{
+    width: 100%;
+    height: 30%;
+    background-color: #fff;
+    border-radius: 1vw;
+    padding: 2vw;
+    position: relative;
+}
+#addStudents .info .noOfStudents h3{
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+#addStudents .info .noOfStudents h2{
+    font-size: 2vw;
+    margin-top: 2vh;
+}
+#addStudents .info .noOfStudents i{
+    font-size: 3vw;
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+}
+
+#addStudents .info .quickLinks{
+    width: 100%;
+    height: 70%;
+    background-color: #fff;
+    border-radius: 1vw;
+    position: relative;
+    padding: 8vh 0;
+}
+#addStudents .info .quickLinks h2{
+    font-size: 2vw;
+    padding-left: 2vw;
+}
+#addStudents .info .quickLinks ul{
+    color: #000;
+    height: 80%;
+    margin-top: 3vh;
+}
+#addStudents .info .quickLinks ul li{
+    padding: 1vh 1vw;
+    margin-left: 2vw;
+}
+#addStudents .info .quickLinks ul hr{
+    border: 0.1vw solid #000;
+}
+#addStudents .info .quickLinks ul a{
+    font-size: 1.2vw;
+    color: #000;
+}
+#addStudents .info .quickLinks ul a:hover{
+    text-decoration: underline;
+}
